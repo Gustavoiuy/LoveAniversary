@@ -1,0 +1,76 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: #0b0c10;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#clickEffectContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.teAmoEffect {
+  position: absolute;
+  color: #ff69b4;
+  font-size: 24px;
+  font-weight: bold;
+  animation: fadeOut 1s ease-out forwards;
+  user-select: none;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+.foto-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: aparecer 2s ease;
+}
+
+.foto-romantica {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.7);
+  border: 4px solid #ff69b4;
+  transition: transform 0.3s;
+}
+
+.foto-romantica:hover {
+  transform: scale(1.05);
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
