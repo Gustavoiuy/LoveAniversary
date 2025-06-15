@@ -123,6 +123,7 @@ canvas {
   z-index: 5;
   animation: fadeInOut 2s ease-in-out forwards;
   display: none;
+  color:rgb(60, 181, 225);
 }
 
 @keyframes fadeInOut {
@@ -219,6 +220,6 @@ canvas {
 }
 @media (max-width: 600px) {
   .foto-container {
-    top: 70%;
+    top: 60%;
   }
 }
