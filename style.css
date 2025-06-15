@@ -175,3 +175,45 @@ canvas {
   color: #fff;
   font-size: 1rem;
 }
+
+/* Estilos para pantallas pequeñas como móviles */
+@media (max-width: 600px) {
+  .mensaje-aniversario {
+    font-size: 1.6rem;
+  }
+
+  .contenedor-contador h2 {
+    font-size: 1.3rem;
+  }
+
+  #contador-tiempo {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #contador-tiempo div {
+    width: 70px;
+    padding: 10px;
+  }
+
+  #contador-tiempo span {
+    font-size: 1.5rem;
+  }
+
+  #contador-tiempo p {
+    font-size: 0.8rem;
+  }
+
+  .foto-romantica {
+    width: 180px;
+  }
+
+  #botonAmor {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .mensaje-especial {
+    font-size: 18px;
+  }
+}
